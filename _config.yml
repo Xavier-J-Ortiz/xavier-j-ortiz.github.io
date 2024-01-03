@@ -44,17 +44,19 @@ comments:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
   giscus:
-    repo_id              : "MDEwOlJlcG9zaXRvcnk3NjYwODI1OQ==" # Shown during giscus setup at https://giscus.app
+    repo                 : "xavier-j-ortiz/xavier-j-ortiz.github.io"
+    repo_id              : "R_kgDOLAbKTw" # Shown during giscus setup at https://giscus.app
     category_name        : "Comments" # Full text name of the category
-    category_id          : "DIC_kwDOBJDzA84CTUbR"# Shown during giscus setup at https://giscus.app
+    category_id          : "DIC_kwDOLAbKT84CcK9n" # Shown during giscus setup at https://giscus.app
     discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
-    strict               : "0"
+    strict               : "1"
     reactions_enabled    : "1" # '1' for enabled (default), '0' for disabled
     emit_metadata        : "0"
     input_position       : "bottom"
     theme                : "light" # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
     lang                 : "en"
     loading              : "lazy"
+    crossorigin          : "anonymous"
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
