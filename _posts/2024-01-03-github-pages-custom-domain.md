@@ -49,6 +49,14 @@ This totally makes sense, and after digging a bit, stumbled upon [this](https://
 The gist of it is to go to your github _account's_ `Settings --> Pages --> Verified domains`, and add your apex domain. After doing this, you're then instructed to add a github specified subdomain to your domain, and have it resolve a `TXT` record with a specific code value.
 
 This is a way to verify that you are in control of the apex domain that you're going to be serving any subsequent github pages from github from via a subdomain.
+## Overlooked CNAME file
+One thing that I also overlooked was the `CNAME` file.
+
+As happens when looking into guides for the first time, I did see a reference to a `CNAME` file, however it seemed to me that I didn't need to add a file in the repo. I was mistaken, as I had misunderstood the language.
+
+The `CNAME` was added to the repo automagically by github. But since I was not doing a `git pull` on my repository, every time I updated my repository with a post, and then `git push origin main --force` into github, I would force my local main branch which did not have the `CNAME` file, and would misconfigure Github Page's configuration that would allow me to use my subdomain `www.xavierjortiz.com`.
+
+Once I noticed this, I ran a git pull, updating my repo, and am now updating this post. I _now_ hope that `www.xavierjortiz.com` will not have any issues forwarding Github Pages webpage.
 
 # Great success!
 
