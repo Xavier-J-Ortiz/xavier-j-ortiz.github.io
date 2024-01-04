@@ -1,0 +1,112 @@
+---
+layout: single
+classes: wide
+title: First(!) 2024 post, and loose goals for the year
+tags:
+  - webserver
+  - jenkins
+  - giscus
+  - watches
+  - watchmaking
+  - comments
+  - seiko
+  - casio
+  - g-shock
+  - goals
+  - resolutions
+---
+
+# Life and workflow changes lead to delays
+Last time I posted was about a year ago. Not my intention to leave this blog, or other projects "abandoned".
+
+This being a one part hobby, one part tech application blog, the time to dedicate to this is my free time. So though I've been busy, I kind of hindered myself initially from posting due to me killing off Jenkins.
+
+## Death to Jenkins
+When I decided to use Jenkins, I wanted to dip my toes in CI/CD with a well known, trusted tool in the space. Jenkins seemed like the perfect tool. I was inexperienced but, it's readily available in most Linux distro repositories, and there is plenty of documentation on how to configure it. It is a behemoth of a CI/CD Swiss army knife.
+
+After deploying, as months went on with Jenkins running smoothly for this web blog, under the hood, the myriad of plugins needed were endlessly being developed as well and either being very outdated, version deprecated, or in some cases even abandoned.
+
+This meant that the essential plugins needed for Jenkins, which I thought were "set it and forget it", were not. This was not acceptable given that these updates kept security of the plugins, and in turn of Jenkins, in check and up to date.
+
+Funny enough, in the past at work, the Engineering team also moved their CI/CD away from Jenkins _for the same reasons!!!!_ They moved most workflows to [Github Actions](https://github.com/features/actions), and though there were some headaches and hiccups, it worked really well.
+
+I decided to remove Jenkins from my workflow and evaluate other CI/CD options. However, something happened to the small compute company that I was using for my VM image.
+
+## Migration from Linode to GCP
+
+Linode was bought by Akamai. I was not a fan of now being an Akamai customer. I was going to get now, some tax paperwork for my ~$8 monthly spend on my hosted webserver. If I wanted to be part of a large company cloud footprint, I would rather it be [Google Cloud Platform (GCP)](https://cloud.google.com). I had been using the big 3 cloud compute companies at work, and GCP's approach both directly from the cloud console as well as from the API was always elegant, well documented, and straightforward. Plus, had the backing of the behemoth that is Alphabet.
+
+## Using Terraform for Cloud Workflows
+With this migration, I decided to use Terraform to manage the webserver. It's been a work in progress, but am currently quite happy in the state it's in.
+
+All cloud resources from GCP are managed, or are planned to be managed through Terraform. So far, the compute resource is fully managed by Terraform, and the script that provisions it is the `metadata_startup_script` native to GCP.
+
+Eventually, I'd like to manage DNS, as well as the GCP cloud storage buckets through Terraform. They existed prior to the webserver on GCP, so didn't need to create them via Terraform. But I might import them in order to manage them properly.
+
+I might incorporate this webserver to be cached by a CDN, managed by Terraform. Would give me an extra layer of resiliency and performance. I'm considering Cloudflare's services, but need to look into it's Terraform provider, and their API.
+
+## Tweaks in Terraform Take a Long Time
+
+Have been slowly moving from webserver monolith applications to docker, as well as applying the concept of "pets vs cattle". So, I moved the `nginx`, `mariadb`, `php-fpm`, and `certbot` services to docker, and backup any data that is needed for these services in a GCP bucket.
+
+One of the websites is [tripwire](https://tripwire.eve-apps.com/). It's a wormhole mapping tool for a game called Eve Online. There is a tripwire website that has the running publicly, but the developer also has the source on a public Bitbucket repo [here](https://bitbucket.org/daimian/tripwire/src/production/) to be deployed. As a project, I decided to host it on my webserver.
+
+The wormhole mapping tool has a database keeping track of system data of the whole universe by hourly gathering data from the game's publicly available API. After running the service for myself for over a year, I've noticed that the DB is getting quite large. In fact, uncompressed the `mysqldump` file is about 2.5GB. Doesn't sound like a lot, but it keeps the `micro` image that I'm using for the webserver running hot when I do a backup or re-deploy the services.
+
+The development of the Terraform that manages this VM is quite laborious in part because of this database, which I've optimized a bit by creating a cron job that purges any data that is over a week old, since within the tool, this older data is not used.
+
+The other part that takes quite some time to create is the `php-fpm` container. I need to add some extensions to this `php-fpm` docker image which needs to be created via a `Dockerfile` and then compiled.
+
+In practice, this is OK because the docker image isn't going to be built often. However, when developing, adding, and modifying things to the Terraform workflow, every build takes about 30 to 50 minutes, and this can add up.
+
+I need to find a better way to streamline this, and reduce the build time. This will in turn, also reduce my iteration time.
+## Acquisition
+
+The company I was working at, was acquired!
+
+Currently at a new company which will remain unnamed as the acquisition has not been announced publicly. However, the last quarter of 2023 was _hectic_. Leading up to the acquisition, we all had to interview for our positions. Probably a standard procedure of the acquiring company to vet incoming employees, but being the third time I'm part of a company being acquired in the startup tech industry, it's the first time I've ever had to interview to keep the job I already had.
+
+The acquisition was closed in November 2023, and am still on boarding!
+
+Needless to say, I have been short on time since Q4 last year.
+
+## Holidays
+Yes, family time was needed and a break was needed in December.
+
+## Moving www.xavierjortiz.com to Github Pages
+Currently I'm migrating the webpage from self hosted to Github Pages at [xavier-j-ortiz.github.io](https://xavier-j-ortiz.github.io).
+
+I'd like to front the Github Pages URL with [www.xavierjortiz.com](https://www.xavierjortiz.com), but will need to research this a bit.
+
+I deleted the old repo, and created the new one with the same name. However, I forgot that I had comments enabled via [giscus](https://giscus.app). So had to set this up again.
+
+I will also be configuring the settings of the minimal mistakes/jekyll
+
+## Watches and Watchmaking
+
+I don't want to get into this too deep, but have gotten into watches. In particular, I enjoy the aesthetics of Seiko, Casio, and G-Shock watches.
+
+Have bought and sold at least 7 or 8 watches, mostly on [ebay](https://www.ebay.com), and have broken even after buying and selling them. It really helps that all of the watches I've bought have been used. It lets me hone in on what I like, or dislike about a watch, which is the main reason as to why I have such watch turnover. You can't really get a feel for a watch until you own it for a bit and experience the size, weight, thickness, aesthetics, and the intangible "feel on wrist" of a watch.
+
+Have also gotten into _watchmaking_. Purchasing watch parts from reputable third party vendors such as [Namokimods](https://www.namokimods.com), and building them.
+
+I have built a beautiful dress watch which I'm very proud of, and currently have all the parts for another build. Having issues pressing the crystal into the case. I'm holding off on building another watch until I finish the one that I'm having issues with.
+
+I'll probably write a bit about this and add some pictures as well, as the experience of learning, investigating, buying, selling, and building watches has been quite fun, relaxing, and satisfying.
+
+# In Conclusion, 2024 Loose Goals
+* In the upcoming year, I would like to retake some tech projects, though still on boarding to my new job. Hoping that after drinking from the fire hose I'll get into a groove, I'll have spare brainpower for leisure hobbies both in and out of tech.
+
+* Though have had to cut back on EVE to make room for other fun activities, will probably be retaking the game in order to continue with the market project to reduce the time doing arbitrage in game.
+
+* In the short term however, I'll need to figure out how to redirect `xavier-j-ortiz.github.io` to be fronted by `www.xavierjortiz.com`, so that I can have github do the CI/CD piece through Github Pages.
+
+* With regards to the watch hobby:
+  * I'd like to finish the current watch build I'm stuck on, and create one or two new builds before end of year. Realistically, will probably buy parts around Black Friday and enjoy the builds that I currently have on the docket.
+  * Perhaps even purchase a watch (or two) from my preferred Japanese watch companies mentioned earlier. Buying used and using [ebay](https://www.ebay.com) and [Watchuseek](https://www.watchuseek.com) for buying/selling might be the best route to break even, or rather, minimize any financial hit.
+
+* Given that these are now starting to sound like resolutions, I'd like to also start to exercise again. Nothing crazy, but cardio and some weights. See how it goes, and perhaps after that set some tighter goals to do runs every so often.
+
+* Comedy... more on that perhaps in another post.
+
+Happy New Year everybody. Hope to type something up again in under 12 months!
