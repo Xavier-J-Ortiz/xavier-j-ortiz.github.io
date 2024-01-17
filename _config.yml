@@ -16,11 +16,11 @@ minimal_mistakes_skin    : "dirt" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Developer, Network, Cloud, and Linux Geek, and Online Space Warfare Nerd's Portfolio Site"
+title                    : "Linux Geek, Developer, Space Warfare Nerd Site"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Xavier Ortiz"
-description              : "Portfolio Page with a blog complex about Full Stack Development, Programming, Personal Projects, Linux, and occasionally nerdy Eve Online stuff"
+description              : "Portfolio Page with a blog complex about Programming, Personal Projects, Linux, and occasionally video game space warfare stuff"
 url                      : "https://www.xavierjortiz.com" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "Xavier-J-Ortiz/xavier-j-ortiz.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
