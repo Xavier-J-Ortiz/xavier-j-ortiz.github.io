@@ -2,12 +2,9 @@
 layout: single
 title: It's been a while....
 tags:
-  - project
   - Python
   - EvE
-  - market
-  - life
-  - goals
+  - Market
 ---
 
 A lot has happened since my last post.

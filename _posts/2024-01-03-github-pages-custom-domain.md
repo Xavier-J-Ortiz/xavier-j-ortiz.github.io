@@ -3,10 +3,8 @@ layout: single
 classes: wide
 title: Custom Domain for Github Pages Hosted Blog
 tags:
-  - webserver
   - DNS
-  - domain
-  - github pages
+  - CI/CD
 ---
 
 # Using Github Pages as CI/CD, and using my custom subdomain

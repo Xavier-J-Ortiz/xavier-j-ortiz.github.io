@@ -3,8 +3,7 @@ layout: single
 title: Linux and Open Source Alignment and Contribution Goals
 tags:
   - Linux
-  - open source
-  - achievement planning
+  - Open Source
 ---
 
 I've started to write, but I don't have a title for this post yet.

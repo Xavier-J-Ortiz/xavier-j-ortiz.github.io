@@ -3,13 +3,10 @@ layout: single
 classes: wide
 title: To Pandas, or not to Pandas
 tags:
-  - pandas
-  - python
-  - data processing
+  - Python
+  - Data
   - EvE
   - API
-  - research
-  - execution time
 ---
 
 # Research on Pandas

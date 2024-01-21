@@ -2,8 +2,7 @@
 layout: single
 title: Upgrading to Jekyll 4 and overhauling Theme
 tags:
-  - jekyll
-  - upgrade
+  - Jekyll
 ---
 
 I'm motivated. So I decided to upgrade to Jekyll 4 last night. Fortunately the Jekyll upgrade was actually not that difficult. I decided to keep being on Jekyll as it is easy enough to add posts, and I generally understand what's going on without needing to do anything to heavily programmatic, while the site files will stay statically generated and be served real quick with very little compute resources.

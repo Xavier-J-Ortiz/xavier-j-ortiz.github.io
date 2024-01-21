@@ -2,9 +2,8 @@
 layout: single
 title: Open Source Apprenticeship Contribution - Part 1
 tags:
-  - open source
-  - Bloc
-  - project
+  - Open Source
+  - Project
 ---
 
 I've started the last module of my Bloc experience. So far so good. I've learned a lot, however it's expected as there is a lot of ground to cover.

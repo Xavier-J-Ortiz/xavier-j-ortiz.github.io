@@ -3,7 +3,7 @@ layout: single
 title: API pulling market data from Eve Online High Sec Market Hubs
 tags:
   - EvE
-  - market
+  - Market
   - API
 ---
 

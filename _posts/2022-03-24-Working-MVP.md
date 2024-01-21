@@ -4,9 +4,6 @@ title: MVP, CI/CD, and Data... oh my!
 tags:
   - MVP
   - CI/CD
-  - server
-  - container
-  - planning
 ---
 
 Fell into a bit of a slump come around the holidays, and also Q1. Work and other RL obligations has kept me "entertained", to put it nicely. Lets leave it at that, shall we?

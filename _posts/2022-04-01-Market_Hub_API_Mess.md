@@ -2,10 +2,7 @@
 layout: single
 title: To Clean Up a Project Mess, Will Need to Plan
 tags:
-  - python
   - API
-  - Data
-  - Programming
 ---
 Today's post will be a bit short.
 

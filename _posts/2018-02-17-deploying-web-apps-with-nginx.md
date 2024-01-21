@@ -2,13 +2,10 @@
 layout: single
 title: Deploying React, Angular apps, as well as WordPress on a VM
 tags:
- - web server
- - let's encrypt
+ - Web Server
+ - SSL
  - Nginx
- - cloud
- - Linode
- - DigitalOcean
- - Vultr
+ - Cloud
 ---
 
 Before starting, I'd like to provide some background. My last post on contributing to Open Source was made before actually writing a single line of code towards a project. I've run into a couple of hurdles here and there. I did make a contribution to a well known project called Angular. It initially was supposed to be updating a library's way of calling an error message, but unfortunately, the issue that I had chosen was slated for deprecation. So, alas, my work had to be discarded, but I did have the pleasure of adding a single comment to the project's repository.

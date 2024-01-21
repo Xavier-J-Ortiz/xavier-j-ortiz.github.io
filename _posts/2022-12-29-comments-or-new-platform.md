@@ -3,14 +3,7 @@ layout: single
 classes: wide
 title: To Add Comments, or Migrate from Jekyll to Something New
 tags:
-  - research
-  - blog
-  - comments section
-  - integration
-  - blog platforms
-  - giscus
-  - disqus
-  - utterances
+  - Blog
 ---
 
 # I want comments

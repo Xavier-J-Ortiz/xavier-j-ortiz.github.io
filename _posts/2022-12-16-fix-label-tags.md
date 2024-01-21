@@ -3,10 +3,8 @@ layout: single
 classes: wide
 title: Fixing Tag Labels Redirect
 tags:
-  - minimal-mistakes
-  - tags
-  - jekyll
-  - portfolio
+  - Minimal Mistakes
+  - Jekyll
 ---
 # Fixing things that hadn't worked
 
@@ -25,10 +23,8 @@ Adding the tags label within each post is fairly easy. For this page, as an exam
 layout: single
 title: Fixing Tags in this Porfolio Page
 tags:
-  - minimal-mistakes
-  - tags
-  - jekyll
-  - portfolio
+  - Minimal Mistakes
+  - Jekyll
 ---
 ```
 

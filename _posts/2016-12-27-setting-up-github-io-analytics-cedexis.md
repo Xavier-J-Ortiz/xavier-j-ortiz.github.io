@@ -2,8 +2,7 @@
 layout: single
 title: Thoughts on GitHub pages and analytics tags *OR* a multi-fold teaser for other future posts!
 tags:
-  - cedexis
-  - analytics
+  - Analytics
 
 ---
 

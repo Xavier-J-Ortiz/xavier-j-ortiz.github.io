@@ -2,10 +2,8 @@
 layout: single
 title: And so the new adventure begins... Again
 tags:
-  - life
-  - work
-  - Nefeli
-  - project
+  - Work
+  - Life
 ---
 
 It's been a while again. There have been many changes since my last post.

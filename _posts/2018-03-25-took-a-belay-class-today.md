@@ -2,8 +2,7 @@
 layout: single
 title: Did the Belay Class Today at the Climbing Gym!
 tags:
-  - bouldering
-  - climbing
+  - Climbing
 ---
 
 I'm super excited about this.

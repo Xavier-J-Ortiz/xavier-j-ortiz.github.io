@@ -2,7 +2,7 @@
 layout: single
 title: My very first blog post. FINALLY!!!! :D
 tags:
-  - blogging
+  - Blog
 ---
 
 So, it's *finally* here. Alright, take a breath.

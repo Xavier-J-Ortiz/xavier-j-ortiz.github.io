@@ -2,13 +2,7 @@
 layout: single
 title: Adding and Working with a Jenkins Multibranch Pipeline
 tags:
-  - Jenkins
   - CI/CD
-  - ruby
-  - rvm
-  - nginx
-  - bash
-  - ssh
 ---
 
 Now comes the bit part. Many bits and bobs, but will try to capture all the steps required to install Jenkins as well as setup a repo together with the key links that helped me along the way.

@@ -3,12 +3,9 @@ layout: single
 classes: wide
 title: Jekyll and Minimal Mistakes on Debian (12) Bookworm
 tags:
-  - jekyll
-  - minimal mistakes
-  - blog
-  - ruby
-  - gems
-  - debian
+  - Jekyll
+  - Minimal Mistakes
+  - Blog
 ---
 
 # Short Evaluation on What Framework to Use for this Blog

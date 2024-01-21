@@ -3,15 +3,9 @@ layout: single
 classes: wide
 title: SQL, Pandas, or Python Dictionary for Analyzing Data
 tags:
-  - SQL
-  - pandas
-  - python
-  - data storage
-  - data processing
   - EvE
   - API
-  - JSON
-  - research
+  - Data
 ---
 I've done a review of the [`market_hub_puller`](https://github.com/Xavier-J-Ortiz/market_hub_puller) repo that is my current project. It seems that I've done a slight overhaul on how to fetch said data, and have left it at that.
 

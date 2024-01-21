@@ -2,9 +2,8 @@
 layout: single
 title: My experience in a (30+ weekly commitment) Coding Boot camp.
 tags:
-  - boot camp
-  - certifications
-  - Bloc
+  - Bootcamp
+  - Certifications
 ---
 
 Let me start from the beginning of being thwarted towards being part of the U.S. work force.

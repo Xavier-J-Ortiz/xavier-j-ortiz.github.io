@@ -4,9 +4,8 @@ classes: wide
 title: Finding Time with Shifting Priorities
 
 tags:
-- life
-- projects
-- career
+- Life
+- Work
 
 ---
 When I started this blog, I had just gotten married and we lived in a rented apartment in Brooklyn.

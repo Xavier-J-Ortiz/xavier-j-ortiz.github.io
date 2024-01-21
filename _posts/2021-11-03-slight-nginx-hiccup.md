@@ -2,11 +2,8 @@
 layout: single
 title: NGINX snafu linked to letsencrypt?
 tags:
-  - let's encrypt
   - Nginx
-  - Certbot
   - Debian
-  - snapd
 ---
 
 Clearly I have things running, given that the previous, and this current, post are both up and running.

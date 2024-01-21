@@ -3,13 +3,7 @@ layout: single
 title: Distro-stopping a Distro-hopper
 tags:
   - Linux
-  - distro
   - Debian
-  - Fedora
-  - CentOS
-  - Jessie
-  - Sid
-  - VirtualBox
 ---
 
 To the uninitiated, a distro-hopper is someone who hops from Linux distribution to Linux distribution, trying out the different flavors that this marvelous OS provides.

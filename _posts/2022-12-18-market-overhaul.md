@@ -3,12 +3,10 @@ layout: single
 classes: wide
 title: Time to Sleuth! --or-- What's that folder about?!
 tags:
-  - project
-  - python
+  - Python
   - EvE
   - API
-  - data
-  - code sleuth
+  - Data
 ---
 
 # New Overhaul Folder Forgotten
