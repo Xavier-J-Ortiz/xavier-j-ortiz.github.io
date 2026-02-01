@@ -22,7 +22,7 @@ But, I had a lot of thoughts and some decisions to make.
 On installing these two plugins, I could immediately see the chasm of what the neovim ecosystem was.
 To set the stage, in `vim` every time I needed to install a plugin, I used the `vim-plug` plugin, which could be auto-bootstrapped, and the `vim-plug` config for installing plugins is super easy to understand. It's just added in `.vimrc` like so:
 
-```
+```vimscript
 " Automatic installation/bootstrapping of vim-plug
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -55,7 +55,7 @@ On the installation page, I can't help but notice that there is a `single file s
 
 The config below taken from the [`opencode.nvim`](https://github.com/nickjvandyke/opencode.nvim?tab=readme-ov-file#lazynvim) section. It is referenced as `lazy.nvim` setup, presumably to install the plugin.
 
-```
+```lua
 {
   "NickvanDyke/opencode.nvim",
   dependencies = {
@@ -95,7 +95,7 @@ However, with this chunk of code, you need to know how `lazy.nvim` consumes this
 
 After some reading about how this should be installed using `lazy.nvim`, I found the [examples section](https://lazy.folke.io/spec/examples) which has examples on how to add plugins.
 
-```
+```lua
 return {
   -- the colorscheme should be available when starting Neovim
   {
@@ -138,7 +138,7 @@ I end up separating as much of the `opencode.nvim` plugin config spec as possibl
 
 
 - `~/.config/nvim/lua/plugins/`
-```
+```lua
 return {
         "NickvanDyke/opencode.nvim",
         dependencies = {
@@ -154,7 +154,7 @@ return {
 ```
 
 - `~/.config/nvim/lua/config/`
-```
+```lua
 ---@type opencode.Opts
 vim.g.opencode_opts = {
         -- Your configuration, if any — see `lua/opencode/config.lua`, or "goto definition" on the type or field.
