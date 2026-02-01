@@ -1,12 +1,12 @@
 ---
 layout: single
 classes: wide
-title: vim config pruning and tentative migration.
+title: `vim` config pruning and tentative migration.
 
 tags:
-- vim
-- neovim
-- opencode
+- Vim
+- Neovim
+- Opencode
 ---
 
 # It's time to revisit `vim`
