@@ -138,6 +138,7 @@ I end up separating as much of the `opencode.nvim` plugin config spec as possibl
 
 
 - `~/.config/nvim/lua/plugins/`
+
 ```lua
 return {
         "NickvanDyke/opencode.nvim",
@@ -154,6 +155,7 @@ return {
 ```
 
 - `~/.config/nvim/lua/config/`
+
 ```lua
 ---@type opencode.Opts
 vim.g.opencode_opts = {
