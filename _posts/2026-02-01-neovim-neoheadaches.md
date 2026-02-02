@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: Neovim, neoheadaches
+title: The road towards a working Neovim config
 
 tags:
 - Vim
@@ -10,7 +10,7 @@ tags:
 - Lua
 - LSP
 ---
-# Neovim.... more like Neoconfig :am_i_rite?:
+# Neovim.... more like Neoconfig :am_i_rite:?
 I was a bit naive to think that I could straight up use my `.vimrc` and use it as a starting point `nvim` and start to move some of the plugins to their `nvim` versions in a day or two.
 
 I should have just set up `lazy.nvim`, added the `opencode.nvim` plugin, and walked away continuing to use my `vim` plugins (pulled in by `lazy.nvim`) and `.vimrc`.
