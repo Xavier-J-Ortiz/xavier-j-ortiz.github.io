@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: `vim` config pruning and tentative migration.
+title: config pruning `vim` and tentative `nvim` migration.
 
 tags:
 - Vim
