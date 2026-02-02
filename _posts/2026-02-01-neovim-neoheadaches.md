@@ -10,6 +10,7 @@ tags:
 - Lua
 - LSP
 ---
+
 # Neovim.... more like Neoconfig :am_i_rite:?
 I was a bit naive to think that I could straight up use my `.vimrc` and use it as a starting point `nvim` and start to move some of the plugins to their `nvim` versions in a day or two.
 
