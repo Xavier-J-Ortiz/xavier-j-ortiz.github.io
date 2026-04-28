@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/Xavier-J-Ortiz/xavierjortiz-blog-site/edit/main/",
+    url: "https://github.com/Xavier-J-Ortiz/xavier-j-ortiz.github.io/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
