@@ -78,10 +78,10 @@ export const SHARE_LINKS: Social[] = [
 ] as const;
 
 export const GISCUS: GiscusProps = {
-  repo: "Xavier-J-Ortiz/xavierjortiz-blog-site",
-  repoId: "[ENTER REPO ID FROM GISCUS.APP]",
-  category: "General",
-  categoryId: "[ENTER CATEGORY ID FROM GISCUS.APP]",
+  repo: "Xavier-J-Ortiz/xavier-j-ortiz.github.io",
+  repoId: "MDEwOlJlcG9zaXRvcnk3NjYwODI1OQ==",
+  category: "Comments",
+  categoryId: "DIC_kwDOBJDzA84CTUbR",
   mapping: "pathname",
   reactionsEnabled: "1",
   emitMetadata: "0",
