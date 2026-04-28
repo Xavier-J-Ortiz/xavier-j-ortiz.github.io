@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/Xavier-J-Ortiz/xavierjortiz-blog-site/edit/migrate-to-astro/",
+    url: "https://github.com/Xavier-J-Ortiz/xavierjortiz-blog-site/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
