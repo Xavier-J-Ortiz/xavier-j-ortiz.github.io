@@ -51,8 +51,8 @@ const structuredData = {
 <!doctype html>
 <html
   dir={SITE.dir}
-  lang=`${SITE.lang ?? "en"}`
-  class={`${scrollSmooth && "scroll-smooth"}`}
+  lang={`${SITE.lang ?? "en"}`}
+  class={scrollSmooth ? "scroll-smooth" : ""}
 >
   <head>
     <meta charset="UTF-8" />
