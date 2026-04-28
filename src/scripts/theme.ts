@@ -31,6 +31,9 @@ function setPreference(): void {
 
 function reflectPreference(): void {
   document.documentElement.setAttribute("data-theme", themeValue);
+  // Also add CSS class for easier targeting
+  document.documentElement.classList.remove("theme-light", "theme-dark");
+  document.documentElement.classList.add(`theme-${themeValue}`);
 
   document.querySelector("#theme-btn")?.setAttribute("aria-label", themeValue);
 
