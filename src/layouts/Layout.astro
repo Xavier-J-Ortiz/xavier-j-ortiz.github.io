@@ -154,7 +154,7 @@ const structuredData = {
         const themeValue = getPreferTheme();
 
         // Set theme immediately to prevent flash
-        document.firstElementChild?.setAttribute("data-theme", themeValue);
+        document.documentElement.setAttribute("data-theme", themeValue);
 
         // Export minimal API for external script
         window.theme = {
