@@ -13,8 +13,8 @@ Fast forward to July, and AI is here. Things have happened both across the indus
 In a nutshell, here's an update on what pertains to this blog:
 
 - I did end up crafting a `neovim` config that I like. It's not perfect, but it works, and I had been tweaking it little by little as I found and fixed nuances.
-- At work, AI took hold in Q1 of this year, and by March, I was using a lot of it for my workflows.
-- Layoffs hit the industry hard, my company included.
+- I migrated the blog from `Jekyll` to `Astro`, with AI lending a hand.
+- Between the AI wave, layoffs across the industry (my company included), and some personal events, I've put my study plans on pause.
 
 # Neovim and development plan re-direct
 
@@ -24,9 +24,7 @@ It's difficult to get things perfect, and perfection is the enemy of done, espec
 
 Once I reached a usable config that I was happy with (warts and all), I focused elsewhere and continued to get things done. Any remaining tweaks are minor and can sit for a while before I get around to them; the heavy lifting is done.
 
-That said, mid-article, I spent about a day fixing my `opencode.nvim` integration because something was off. On updating, I noticed that one of the functions of the plugin which I enjoyed using had been deprecated. In fact, the plugin itself changed quite a bit, so I got up to speed, modified the specific plugin config, fixed the underlying issue, and then tested this on my workflows. I had to update my `tmux` version and config on a remote laptop I use for work, as well as start using `wezterm` in order to get the right behavior out of `tmux` and `neovim` on said remote laptop.
-
-Also, I'm planning on modifying some of the `vale` packages that I'm using for writing, especially in markdown. I'm getting a lot of `warning` and `error` "noise" at the moment, and to be honest, I'm not sure if I need all of that, since I'm mostly ignoring it. I'm looking at you `write-good.E-prime`, pointing out that I should not use is/are/am.
+That said, while writing this post, I spent about a day fixing my `opencode.nvim` integration because something was off. On updating, I noticed that one of the functions of the plugin which I enjoyed using had been deprecated. In fact, the plugin itself changed quite a bit, so I got up to speed, modified the specific plugin config, fixed the underlying issue, and then tested this on my workflows. I had to update my `tmux` version and config on a remote laptop I use for work, as well as start using `wezterm` in order to get the right behavior out of `tmux` and `neovim` on said remote laptop.
 
 ## A note on Vim
 
@@ -34,13 +32,11 @@ I've abandoned `vim` altogether, as the push towards `neovim` was non-trivial, a
 
 Before the push, my `vim` setup was _exceedingly_ out of date. So, the `neovim` config push was very useful in understanding changes that have occurred in the past couple of years.
 
-Though `neovim` is what I'm currently using, due to its better LSP integration support, I'll continue using it. However, I do miss some minor things in `vim`. I may revisit my `vim` config, just to have it around and up to date, similar to what I've added in `neovim`, and try to get it as close to parity as possible.
-
-`neovim` is a very fast moving target, and things change quickly. One reason my `vim` setup was out of date was that _it always worked_ across different repos and OS upgrades. I don't think I spent as much time on my `vim` config in the past as I have on my `neovim` setup. I kinda like that, and I miss it. If I can get some parity, I may be swayed back to `vim`.
+`neovim` is a very fast moving target, and things change quickly. One reason my `vim` setup was out of date was that _it always worked_ across different repos and OS upgrades. I don't think I spent as much time on my `vim` config in the past as I have on my `neovim` setup, and I kinda like that, and I miss it. Though `neovim` is what I'm currently using, due to its better LSP integration support, I'll continue using it. I may still revisit my `vim` config, just to have it around and up to date, similar to what I've added in `neovim`, and try to get it as close to parity as possible. If I can get some parity, I may be swayed back to `vim`.
 
 # Migration from `Jekyll` to `Astro`
 
-I've migrated the blog site to `Astro`. I had been using `Jekyll` since this blog started, if not before kicking off the website. I kicked this off almost 10 years ago, as one of the projects within my web/software dev coursework! So yeah, it definitely predates the actual website.
+I've migrated the blog site to `Astro`. I had been using `Jekyll` since this blog started, if not before kicking off the website. I started using it almost 10 years ago, as one of the projects within my web/software dev coursework! So yeah, it definitely predates the actual website.
 
 It _was_ working well, besides feeling a bit dated, which I was fine with. I had made an overhaul once, basically updating to the most current `Jekyll` and `ruby` versions in order to not be _too_ out of date. But for the most part _"if it ain't broke, don't fix it"_. I tried to "re-skin" the `Jekyll` framework, but realized that changing the `Jekyll` theme into something I liked would take just as long as migrating to `Astro`, mainly because updating `Jekyll` to a theme I liked required a theme framework upgrade, updating some ruby `gems`, and removing some old config options that either broke with these upgrades or were missing required parameters. After what felt like a lot of effort and not a lot of progress, I decided this was too much work just to add a new theme on an old, dated framework/platform.
 
@@ -50,23 +46,23 @@ Plus, the newer `Astro` framework removed the annoying ruby `gem` dependencies, 
 
 I did use AI to do the migration. At the time, I used `opencode` and its internal AI model `Big Pickle` to do this, and had good results. `Astro` looked better in my opinion, and was less tedious to update.
 
-# Study plans and open source contributing
+While I'm at it, I'm also planning on modifying some of the `vale` packages that I'm using for writing, especially in markdown. I'm getting a lot of `warning` and `error` "noise" at the moment, and to be honest, I'm not sure if I need all of that, since I'm mostly ignoring it. I'm looking at you `write-good.E-prime`, pointing out that I should not use is/are/am.
 
-With changes in the industry, layoffs at work, and an unfortunate passing in the family, I paused some of the "fun" new technology projects.
+# Study plans on pause
 
 I had planned on diving a bit deeper into `golang` and `python`, improving my fluency in both languages. Generally speaking, I do believe in the value of diving deeper into writing code and improving in a language or two, even with the forced push towards AI.
-
-Not writing code and outsourcing coding work to an AI agent brings on brain rot, which is harmful to other aspects of planning during larger projects, and to the review process of real humans with real eyeballs. People still need to read things and understand them during review. If you can write good code, you can also read and curate good code created by AI, so that others can read good code for review. AI slop stops with you.
-
-But there are things that AI can save you time on. Search is a huge one; also, tedious boilerplate starter code is another thing AI is perfect for.
 
 Besides focusing on `golang`, I also had plans to contribute to [saltstack/salt](https://github.com/saltstack/salt), as well as to [golang/go](https://github.com/golang/go).
 
 On the Linux side, I was considering creating a mini home lab, maybe going through the course material of some advanced Linux certificates, or other more advanced courses that I might find online.
 
-All these things are on pause at the moment. As with `neovim`, which is a tool that requires understanding some of the features that you are willfully adding to it, AI is also a tool that requires some usage and then some thought on how to improve it within your workflow.
+With changes in the industry, layoffs at work, and an unfortunate passing in the family, I paused those projects. At work, AI took hold in Q1 of this year, and by March, I was using a lot of it for my workflows. The industry is in flux right now, and nobody knows what's next for this technology, or how it will reshape industry roles.
 
-The industry is in flux right now, and nobody knows what's next for this technology, or how it will reshape industry roles.
+Not writing code and outsourcing coding work to an AI agent brings on brain rot, which is harmful to other aspects of planning during larger projects, and to the review process of real humans with real eyeballs. People still need to read things and understand them during review. If you can write good code, you can also read and curate good code created by AI, so that others can read good code for review. AI slop stops with you.
+
+But there are things that AI can save you time on. Search is a huge one; also, tedious boilerplate starter code is another thing AI is perfect for.
+
+As with `neovim`, which is a tool that requires understanding some of the features that you are willfully adding to it, AI is also a tool that requires some usage and then some thought on how to improve it within your workflow.
 
 For me, at this moment, I'm thinking quite a bit about this. I want to continue doing what I'm doing in tech, without losing the enjoyment, while staying relevant. Based on this, I'll make core decisions on what I'm going to work toward in the upcoming months.
 
