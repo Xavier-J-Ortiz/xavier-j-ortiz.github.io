@@ -7,3 +7,10 @@ dist/
 # Astro cache
 .astro/
 public/pagefind/
+
+# Secrets. pi-sandbox's denyWrite defaults mask these paths, which can leave
+# empty mount-point files behind; don't let them get committed.
+.env
+.env.*
+*.pem
+*.key
